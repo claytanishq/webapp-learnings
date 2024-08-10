@@ -1,0 +1,50 @@
+<HTML>
+
+<HEAD>
+<TITLE> JS FORM</TITLE>
+<SCRIPT language = "javascript">
+
+function agg()
+{
+
+x = arc.mm.value
+y = arc.ss.value
+z = arc.qt.value
+amt = y * z
+alert ( x + " Your Total Cost Is ₹" + amt)
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY bgcolor = cyan><center>
+<pre>
+
+<h1> Shopping Cart </h1>
+
+<hr>
+<h2>
+<form name = arc>
+Please Enter Your Name:  <input type = text name = mm>
+
+
+Select The Product:
+
+<Select Name = ss>
+<option value = 500> T-Shirt </option>
+<option value = 1200> Sweatshirt </option>
+<option value = 1500> Hoodie </option>
+</select>
+
+
+Please Enter How Many Of The Item You Want: <input type = text name = qt>
+
+
+<Input type = button value = "Calculate Aggregate Price" onclick = agg()>
+
+</form>
+</h2>
+</BODY>
+
+</HTML>
