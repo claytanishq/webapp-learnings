@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <script>
+        function alpha() {
+            x = arc.A.value
+            y = arc.B.value
+            a = x+y
+            b = x-y
+            c = x*y
+            d = x/y
+            arc.AR.value = a
+            arc.AS.value = b
+            arc.AM.value = c
+            arc.AD.value = d
+        }
+    </script>
+</head>
+<body>
+    <h1>Simple Calculator</h1> <br>
+    <form name = arc>
+    Enter First Number: <input type = text name = A> <br><br>
+    Enter Second Number: <input type= text name = B> <br><br>
+    <input type = button value = "Calculate" onclick = alpha()> <br><br>
+    Addition = <input type = text name = AR>
+    Substraction = <input type = text name = AS>
+    Multiplication = <input type = text name = AM>
+    Division = <input type = text name = AD>
+    </form>
+</body>
+</html>

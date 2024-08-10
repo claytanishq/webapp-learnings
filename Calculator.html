@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Calculator</title>
+    <script>
+        function calculate() 
+        {
+            num1 = parseInt(arc.num1.value);
+            num2 = parseInt(arc.num2.value);
+            operation = arc.operation.value;
+            let result;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                result = "Please enter valid numbers";
+            } else {
+                switch (operation) {
+                    case "add":
+                        result = num1 + num2;
+                        break;
+                    case "subtract":
+                        result = num1 - num2;
+                        break;
+                    case "multiply":
+                        result = num1 * num2;
+                        break;
+                    case "divide":
+                        result = num1 / num2;
+                        break;
+                    default:
+                        result = "Invalid operation";
+                }
+            }
+
+            arc.result.value = result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <form name = arc>
+    Enter First Number: <input type="number" name="num1">
+    Enter Second Number: <input type="number" name="num2">
+    <br><br>
+    <select name="operation">
+        <option value="add">Addition</option>
+        <option value="subtract">Subtraction</option>
+        <option value="multiply">Multiplication</option>
+        <option value="divide">Division</option>
+    </select>
+    <button onclick="calculate()">Calculate</button>
+    Result = <input type = text name = result>
+    </form>
+
+    <br><br>
+    
+</body>
+</html>
